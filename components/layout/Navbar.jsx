@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./ui/Logo";
+import Logo from "../ui/Logo";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
