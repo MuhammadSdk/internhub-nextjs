@@ -1,5 +1,23 @@
 import FeatureCard from "../ui/FeatureCard";
 
+const features = [
+  {
+    icon: "📊",
+    title: "Track Applications",
+    description: "Manage all your internship applications in one place.",
+  },
+  {
+    icon: "🏢",
+    title: "Company Management",
+    description: "Organize companies and internship opportunities.",
+  },
+  {
+    icon: "📅",
+    title: "Interview Schedule",
+    description: "Never miss an interview with schedule reminders.",
+  },
+];
+
 export default function Features() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-20">
@@ -15,26 +33,16 @@ export default function Features() {
       </div>
 
       <div className="mt-12 grid gap-8 md:grid-cols-3">
-
-        <FeatureCard
-          icon="📊"
-          title="Track Applications"
-          description="Manage all your internship applications in one place."
-        />
-
-        <FeatureCard
-          icon="🏢"
-          title="Company Management"
-          description="Organize companies and internship opportunities."
-        />
-
-        <FeatureCard
-          icon="📅"
-          title="Interview Schedule"
-          description="Never miss your interview schedule again."
-        />
-
+        {features.map((feature) => (
+          <FeatureCard
+            key={feature.title}
+            icon={feature.icon}
+            title={feature.title}
+            description={feature.description}
+          />
+        ))}
       </div>
+
 
     </section>
   );
