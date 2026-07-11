@@ -2,12 +2,12 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between border-b border-slate-200 pb-6">
       <div>
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-bold text-slate-900">
           Dashboard
         </h1>
 
-        <p className="mt-2 text-slate-500">
-          Welcome back, Sidik 👋
+        <p className="mt-1 text-slate-500">
+          Welcome back! Here's an overview of your internship progress.
         </p>
       </div>
 
