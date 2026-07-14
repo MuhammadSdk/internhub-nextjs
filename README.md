@@ -83,23 +83,30 @@ components/
 
 ### Landing Page
 
-> Add screenshot here
+![Landing Page](public/screenshots/home.png)
+---
 
 ### Dashboard
 
-> Add screenshot here
+![Dashboard](public/screenshots/dashboard.png)
+
+---
 
 ### Companies
 
-> Add screenshot here
+![Companies](public/screenshots/companies.png)
+
+---
 
 ### Login
 
-> Add screenshot here
+![Login](public/screenshots/login.png)
 
-### Register
+---
 
-> Add screenshot here
+### About
+
+![About](public/screenshots/about.png)
 
 ---
 
