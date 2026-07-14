@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# InternHub
 
-## Getting Started
+InternHub is a modern Internship Management System built with **Next.js** and **Tailwind CSS**. It helps students discover internship opportunities, manage applications, and track their internship journey through a clean and responsive dashboard.
 
-First, run the development server:
+---
+
+## Live Demo
+
+🔗 https://internhub-nextjs.vercel.app
+
+---
+
+## Features
+
+### Landing Page
+- Modern Hero Section
+- Features Section
+- Statistics Section
+- Call To Action
+- Responsive Footer
+
+### Dashboard
+- Responsive Sidebar
+- Dashboard Header
+- Summary Cards
+- Internship Applications Table
+- Recent Activity
+
+### Companies
+- Company List
+- Search Company
+- Filter Buttons
+- Company Cards
+
+### Authentication UI
+- Login Page
+- Register Page
+
+### About
+- About InternHub
+- Technology Stack
+- Project Overview
+
+---
+
+## Tech Stack
+
+- Next.js 16
+- React
+- Tailwind CSS
+- React Icons
+- Vercel
+
+---
+
+## Project Structure
+
+```
+app/
+│
+├── about/
+├── applications/
+├── companies/
+├── dashboard/
+├── interviews/
+├── login/
+├── register/
+│
+components/
+│
+├── application/
+├── auth/
+├── company/
+├── dashboard/
+├── layout/
+├── sections/
+└── ui/
+```
+
+---
+
+## Screenshots
+
+### Landing Page
+
+> Add screenshot here
+
+### Dashboard
+
+> Add screenshot here
+
+### Companies
+
+> Add screenshot here
+
+### Login
+
+> Add screenshot here
+
+### Register
+
+> Add screenshot here
+
+---
+
+## Installation
+
+Clone this repository
+
+```bash
+git clone https://github.com/MuhammadSdk/internhub-nextjs.git
+```
+
+Go to project
+
+```bash
+cd internhub-nextjs
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build production
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+- Backend Integration
+- Authentication with Supabase
+- Database Integration
+- Internship CRUD
+- User Profile
+- Company Dashboard
+- Notification System
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+**Muhammad Sidik Latuconsina**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- GitHub: https://github.com/MuhammadSdk
+- LinkedIn: www.linkedin.com/in/m-sidik-25aa02275
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+If you like this project, don't forget to give it a star!
