@@ -6,28 +6,35 @@ import RecentActivity from "@/components/dashboard/RecentActivity";
 
 export default function DashboardPage() {
   return (
-    <div className="flex min-h-screen bg-slate-100">
+    <div className="min-h-screen bg-slate-100 lg:flex">
+
+      {/* Sidebar */}
       <Sidebar />
 
-      <main className="flex-1 bg-slate-50 p-8">
+      {/* Main Content */}
+      <main className="flex-1 p-8">
 
+        {/* Header */}
         <Header />
 
-          <SummaryCards />
+        {/* Summary Cards */}
+        <SummaryCards />
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-3">
+        {/* Content */}
+        <section className="mt-8 grid gap-8 lg:grid-cols-3">
 
-            <div className="lg:col-span-2">
-              <InternshipTable />
-            </div>
-
-            <div>
-              <RecentActivity />
-            </div>
-
+          <div className="lg:col-span-2">
+            <InternshipTable />
           </div>
 
-    </main>
+          <div>
+            <RecentActivity />
+          </div>
+
+        </section>
+
+      </main>
+
     </div>
   );
 }

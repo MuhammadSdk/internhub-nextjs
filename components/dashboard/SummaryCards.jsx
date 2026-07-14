@@ -1,22 +1,28 @@
 import SummaryCard from "./SummaryCard";
 
+import {
+  FaFileAlt,
+  FaBuilding,
+  FaCalendarAlt,
+} from "react-icons/fa";
+
 const cards = [
   {
-    icon: "📄",
+    icon: <FaFileAlt className="text-4xl text-blue-600" />,
     title: "Applications",
     total: 12,
     description: "Total internship applications",
     trend: "+5%",
   },
   {
-    icon: "🏢",
+    icon: <FaBuilding className="text-4xl text-blue-600" />,
     title: "Companies",
     total: 20,
     description: "Partner companies",
     trend: "+3%",
   },
   {
-    icon: "📅",
+    icon: <FaCalendarAlt className="text-4xl text-blue-600" />,
     title: "Interviews",
     total: 4,
     description: "Upcoming interviews",
@@ -27,7 +33,9 @@ const cards = [
 export default function SummaryCards() {
   return (
     <section className="mt-8">
-      <div className="grid gap-6 md:grid-cols-3">
+
+      <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+
         {cards.map((card) => (
           <SummaryCard
             key={card.title}
@@ -38,7 +46,9 @@ export default function SummaryCards() {
             trend={card.trend}
           />
         ))}
+
       </div>
+
     </section>
   );
 }

@@ -45,10 +45,9 @@ export default function RegisterPage() {
           placeholder="Confirm your password"
         />
 
-        <AuthButton>
+         <AuthButton href="/dashboard">
           Create Account
         </AuthButton>
-
         <p className="mt-6 text-center text-sm text-slate-500">
           Already have an account?{" "}
           <Link

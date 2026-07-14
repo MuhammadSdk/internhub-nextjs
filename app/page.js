@@ -5,7 +5,6 @@ import Statistics from "@/components/sections/Statistics";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 
-
 export default function Home() {
   return (
     <>

@@ -1,9 +1,12 @@
 import AuthCard from "@/components/auth/AuthCard";
 import AuthInput from "@/components/auth/AuthInput";
 import AuthButton from "@/components/auth/AuthButton";
+import Navbar from "@/components/layout/Navbar";
 
 export default function LoginPage() {
   return (
+    <>
+    <Navbar />
     <main className="flex min-h-screen items-center justify-center bg-slate-100 px-6">
 
       <section className="w-full max-w-md rounded-2xl bg-white p-8 shadow-lg">
@@ -62,7 +65,7 @@ export default function LoginPage() {
 
             </div>
 
-            <AuthButton>
+            <AuthButton href="/dashboard">
                 Sign In
             </AuthButton>
             <p className="mt-6 text-center text-sm text-slate-500">
@@ -79,5 +82,6 @@ export default function LoginPage() {
       </section>
 
     </main>
+    </>
   );
 }

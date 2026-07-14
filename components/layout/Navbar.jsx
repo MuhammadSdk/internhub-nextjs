@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "../ui/Logo";
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
@@ -8,42 +9,45 @@ export default function Navbar() {
         {/* Logo */}
         <Logo />
 
-        {/* Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Navigation */}
+        <div className="hidden items-center gap-8 md:flex">
 
-                <Link
-                    href="/"
-                    className="text-slate-600 transition hover:text-blue-600">
-                    Home
-                </Link>
+          <Link
+            href="/"
+            className="font-medium text-slate-600 transition hover:text-blue-600"
+          >
+            Home
+          </Link>
 
-                <Link
-                    href="/about"
-                    className="text-slate-600 transition hover:text-blue-600">
-                    About
-                </Link>
+          <Link
+            href="/about"
+            className="font-medium text-slate-600 transition hover:text-blue-600"
+          >
+            About
+          </Link>
 
-                <Link
-                    href="/dashboard"
-                    className="text-slate-600 transition hover:text-blue-600">
-                    Dashboard
-                </Link>
+          <Link
+            href="/companies"
+            className="font-medium text-slate-600 transition hover:text-blue-600"
+          >
+            Companies
+          </Link>
 
-                </div>
+        </div>
 
-        {/* Button */}
+        {/* Right Button */}
         <div className="flex items-center gap-3">
 
           <Link
             href="/login"
-            className="text-slate-600 hover:text-black transition"
+            className="font-medium text-slate-600 transition hover:text-blue-600"
           >
             Login
           </Link>
 
           <Link
             href="/register"
-            className="rounded-xl bg-blue-600 px-5 py-2 text-white hover:bg-blue-700 transition"
+            className="rounded-xl bg-blue-600 px-5 py-2 font-medium text-white transition hover:bg-blue-700"
           >
             Get Started
           </Link>
